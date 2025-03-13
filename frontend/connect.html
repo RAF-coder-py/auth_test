@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Florimont</title>
+    <link rel="stylesheet" href="./connect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aec1267b7c.js" crossorigin="anonymous"></script>
+    <script src="./connect.js" defer></script>
+</head>
+<body>
+    
+    <div class="content">
+        <div class="container">
+            <section class="global-form">
+                <div class="mode-div">
+                    <button class="mode selected" id="modeIn">LOG IN</button>
+                    <button class="mode" id="modeUp">SIGN UP</button>
+                </div>
+                <div class="form">
+                    <form action="#" class="signIn-form" id="signInForm">
+                        <div class="input-box">
+                            <input type="email" id = "email" placeholder="Email" required>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id = "password" placeholder="Password" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="form-footer">
+                            <div class="remember">
+                                <input type="checkbox" id="rememberMe">
+                                <p>remember me</p>
+                            </div>
+                            <a href="#" class="forgot">forgot password?</a>
+                        </div>
+                        <p id="errorMessage"></p>
+                        <button id="signIn" class="submit" type="submit">SIGN IN</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

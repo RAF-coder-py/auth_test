@@ -1,0 +1,237 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    font-size: 0.625rem;
+    overflow: hidden;
+
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    border: none;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* base du format  */
+
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    background: url("./pic/sunrise.avif") no-repeat center center/cover;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(239, 242, 245, 0.265);
+}
+
+/* Form  */
+
+.container .global-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70%;
+    min-width: 40rem;
+    width: 50%;
+    border-radius: 2rem;
+    /* box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5); */
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+}
+
+/* formulaire */
+
+.form {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* mode-div */
+
+.container .global-form .mode-div {
+    height: auto;
+    width: auto;
+    margin: 5rem;
+    margin-bottom: 0;
+}
+
+
+.mode {
+    padding: 0 3rem;
+    color: rgba(255, 255, 255, 0.436);
+    font-size: 3rem;
+    font-weight: 500;
+    width: 24rem;
+    transition: all .2s ease-out;
+}
+
+.mode:hover {
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.selected {
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+/* Inputs  */
+
+.form form .input-box {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.form form .input-box input {
+    width: 100%;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: transparent;/* rgba(158, 122, 113, 0.283); */
+    padding-left: 2rem;
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 1.8rem;
+    font-weight: 200;
+    border: 1px solid rgba(255, 255, 255, 0.822);
+}
+
+
+/* form-footer */
+
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    /* background-color: tomato; */
+}
+
+.form-footer .remember {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-footer .remember p {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: 300;
+}
+
+.form-footer  a {
+    font-size: 1.7rem;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: 300;
+    transition: all 0.2s;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.form-footer .remember #rememberMe {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    border-radius: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+.form form .input-box i{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+
+
+.form form input:focus {
+    outline: none;
+}
+
+.form form input:focus::placeholder{
+    font-weight: 350;
+    color: white;
+}
+
+.form form input::placeholder {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+/* buttons  */
+
+.submit {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: rgba(231, 69, 20, 0.339);
+    font-size: 2rem;
+    color: white;
+    transition: all 0.2s;
+}
+
+.submit:hover {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    transition: all 0.2s;
+}
+
+/* error message  */
+
+#errorMessage {
+    visibility: hidden;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: crimson;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
